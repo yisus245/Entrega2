@@ -1,0 +1,447 @@
+/* Inico Estilos del menu*/
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: #4444;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    padding: 0;
+}
+
+
+.nav-bar{
+    background: #E38645;
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    background: #555;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+
+.menu__link{
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    background: #444;
+
+}
+
+.submenu .menu__link:hover{
+    background: #222;
+
+}
+
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.submenu .menu__link{
+    background: #333;
+    padding-left: 50px;
+}
+
+.mostrar{
+    margin-left: 0;
+
+}
+
+@media(min-width:1024px){
+    .nav-bar{
+        display: none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+    }
+    .container-submenu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+img{
+    width: 10%;
+    height: 10%;
+}
+
+/* Fin Estilos del menu*/
+/* Inico Estilos del banner*/
+.flex-container{
+    border: 1px solid black;
+    background:white ;
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.caja{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 5px;
+    position: relative;
+    background: url(https://img.freepik.com/fotos-premium/carrito-compras-pasillo-supermercado-estantes-productos-interior-desenfocado-fondo-desenfocado_293060-7523.jpg?w=1380) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: 5500px;
+    overflow: hidden;
+}
+
+.main-image{
+    position: relative;
+    background: url(https://img.freepik.com/fotos-premium/carrito-compras-pasillo-supermercado-estantes-productos-interior-desenfocado-fondo-desenfocado_293060-7523.jpg?w=1380) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container  h1{
+    margin: 0;
+    font-size: 66px;
+}
+
+.container h1 span{
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+}
+
+.button{
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:hover{
+    opacity: .6;
+}
+/* Fin Estilos del banner*/
+/* Inico Estilos del cuerpo*/
+
+.conte{
+    display: flex;
+    padding: 25px;
+
+}
+
+.text{
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.etique{
+    display: flex;
+    padding: 25px;
+  
+}
+
+.img2{
+    width: 400px;
+    height: 400px;
+}
+/* Fin Estilos del cuerpo*/
+/* Inicio Estilos de Articulos Destacados*/
+#info{
+    color: #333;
+    text-align: center;
+    }
+    
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 150px;
+}
+    
+.info-pet{
+     margin: 10px;
+}
+    
+.info-pet img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 7px solid #333;
+    justify-content: center;    
+}
+/* Fin de Estilos de Articulos Destacados*/
+/* Inicio Estilos del Login*/
+.login {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+/* Fin Estilos del Login*/
+/* Inico de footer pie de pagina */
+footer {
+    background-color: #0071dc;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    
+}
+/* fin de footer pie de pagina */
+/* Inico del responsive */
+@media (max-width: 576px) {
+   h1{
+    color: #b80f22;
+   }
+   
+.caja{
+    width: 300px;
+    height: 200px;
+}
+
+.container  h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+.container h1 span{
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen{
+    margin: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.conte{
+    padding: 0;   
+}
+ 
+.img2{
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+.text{
+    padding-left: 25px;
+    font-size: 10px;
+}
+
+#info .contenedor{
+    padding: 0;
+}
+
+.info-pet img{
+    width: 80px;
+    height: 80px;
+}
+
+}
+
+
+@media (max-width: 992px) {
+    h1{
+     color: #b80f22;
+    }
+    
+ .caja{
+     width: 300px;
+     height: 200px;
+ }
+ 
+ .container  h1{
+     margin: 0;
+     font-size: 20px;
+ }
+ 
+ .container h1 span{
+     border: 6px solid white;
+     padding: 6px 14px;
+     display: inline-block;
+ }
+ 
+ .cen{
+     margin: 20px;
+     display: block;
+     font-size: 15px;
+ }
+ 
+ .conte{
+     padding: 0;   
+ }
+  
+ .img2{
+     width: 80px;
+     height: 80px;
+     display: none;
+ }
+ 
+ .text{
+     padding-left: 25px;
+     font-size: 10px;
+ }
+ 
+ #info .contenedor{
+     padding: 0;
+ }
+ 
+ .info-pet img{
+     width: 80px;
+     height: 80px;
+ }
+}
+/* Fin de responsive*/
+.card{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
